@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // Use node es6 promise module
 mongoose.Promise = global.Promise;
 // Connect to local mongo
-mongoose.connect('mongodb://localhost/users_test');
+mongoose.connect('mongodb://localhost/users_test', { useNewUrlParser: true });
 // execute code once in this block(for connecting to mongo) before running test
 before((done) => {
   // mongo connection status
