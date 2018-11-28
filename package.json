@@ -1,0 +1,24 @@
+{
+  "name": "users-mongo",
+  "version": "1.0.0",
+  "description": "Learn to use mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herman113/users-mongo.git"
+  },
+  "author": "herman soto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herman113/users-mongo/issues"
+  },
+  "homepage": "https://github.com/herman113/users-mongo#readme",
+  "dependencies": {
+    "mocha": "^5.2.0",
+    "mongoose": "^5.3.14",
+    "nodemon": "^1.18.7"
+  }
+}
