@@ -2,19 +2,20 @@
 const assert = require('assert');
 // add User model
 const User = require('../models/user');
-
-describe('Creating Records', (done) => {
-  it('saves a user', () => {
+// create a test named Creating Records
+describe('Creating Records', () => {
+  // portion of test named saves a user
+  it('saves a user', (done) => {
     // creates an instance of User to a const named herman
-    const herman = new User({
-      firstName: "herman"
+    const dorota = new User({
+      firstName: "Dorota"
     });
     // saves herman to database
-    herman.save()
+    dorota.save()
       .then(() => {
         // Has herman been saved properly?
-        assert(!herman.isNew);
+        assert(!dorota.isNew);
         done();
-      })
+      });
   });
 });
