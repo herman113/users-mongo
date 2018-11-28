@@ -1,6 +1,9 @@
 // Connect to mongoose library
 const mongoose = require('mongoose');
 
+// Use node es6 promise module
+mongoose.Promise = global.Promise;
+
 // Connect to local mongo
 mongoose.connect('mongodb://localhost/users_test');
 
