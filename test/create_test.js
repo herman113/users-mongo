@@ -13,3 +13,9 @@ describe('Creating Records', () => {
     herman.save();
   });
 });
+
+// Is a hook. will call beforeEach before each assertion
+beforeEach(() => {
+  // this will use mongoose to find all collections.users a delete them.
+  mongoose.connection.collections.users.drop();
+})
