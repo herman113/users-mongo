@@ -4,7 +4,7 @@
   "description": "Learn to use mongo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "nodemon --exec 'mocha -R min'"
   },
   "repository": {
     "type": "git",
